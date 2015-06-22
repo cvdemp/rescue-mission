@@ -7,4 +7,9 @@ FactoryGirl.define do
     password_confirmation 'password'
   end
 
+  factory :question do
+    sequence(:title) { |n| "Question #{n}" * 10 }
+    description "Great Question" * 30
+  end
+
 end

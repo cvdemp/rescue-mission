@@ -5,7 +5,8 @@ feature 'user views question\'s details', %Q{
   I want to view a question's details
   So that I can effectively understand the question
 } do
-  let!(:question) { Question.create!(title: 'NootnootnootNootnootnootNootnootnootNootnootnoot', description: "aa" * 150) }
+  Question.create!(title:"NootnootnootNootnootnootNootnootnootNootnootnoot", description:"BlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblah.")
+
   # Acceptance Criteria
   #
   # [x] I must be able to get to this page from the questions index
@@ -17,6 +18,6 @@ feature 'user views question\'s details', %Q{
     click_link 'NootnootnootNootnootnootNootnootnootNootnootnoot'
 
     expect(page).to have_content('NootnootnootNootnootnootNootnootnootNootnootnoot')
-    expect(page).to have_content('aa' * 150)
+    expect(page).to have_content('BlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblah.')
   end
 end
