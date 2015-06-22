@@ -17,6 +17,6 @@ feature 'user views questions', %Q{
   scenario 'visits index and sees the title of each question' do
     visit questions_path
 
-    expect(page).to have_content('I was wondering abut at thing stuff and other things')
+    expect(page).to have_content('I was wondering about at thing stuff and other things')
   end
 end
