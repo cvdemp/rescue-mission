@@ -2,11 +2,12 @@
 <h3> <%= @question.description %> </h3>
 
 <h1>Answers</h1>
+<ul>
 <% if !@answers.empty? %>
   <% @answers.each do |answer| %>
-    <%= answer.description %>
+    <li><%= answer.description %></li>
   <% end %>
-
+</ul>
 <% end %>
   <h1>Answer Question</h1>
 
