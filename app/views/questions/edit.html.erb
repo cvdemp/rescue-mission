@@ -9,5 +9,6 @@
 
     <%= f.submit 'Submit' %>
   <% end %>
-
 </div>
+
+<h3><%= link_to "Delete Question", "/questions/" + @question.to_param, method: :delete %></h3>
